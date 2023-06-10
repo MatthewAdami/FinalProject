@@ -1,0 +1,6 @@
+Name: 
+Breed: 
+Age: 
+Gender: 
+Color: 
+Birthday: 

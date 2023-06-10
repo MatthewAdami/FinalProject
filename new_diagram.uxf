@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>0</y>
+      <w>468</w>
+      <h>804</h>
+    </coordinates>
+    <panel_attributes>Main_Project::SignUpandSignIn
+--
+~signupframe: JFrame
+-file: File
+-layeredPane: JLayeredPane
+-SignInPanelButton: JButton
+-SignUpPanelBotton: JButton
+-Logo: JLabel
+-SignUpPanel: JPanel
+-signUpButton: JButton
+-passwordFieldSIgnUp: JPasswordField
+-emailFieldSignUp: JTextField
+-contacttextfield: JTextField
+-fullname: JTextField
+-PasswordLabelSignUp: JLabel
+-EmailLAbelSignUp: JLabel
+-ContactsNoLabelSignUp: JLabel
+-NameLabelSignUp: JLabel
+-SignInPanel: JPanel
+-SignInButton: JButton
+-passwordFieldLogin: JPasswordField
+-EmailFieldLogin: JTextField
+-passwordLabelLogin: JLabel
+-EmailLAbelLogin: JLabel
+-LoginAccountLabel: JLabel
+-WelcomeLabel: JLabel
+--
++SignUpandSignIn(): ctor
++main(String[] args): void
++switchPanels(JPanel panel): void
++getFullname(): JTextField
++setFullname(JTextField fullname): void
++getEmailtxtfield(): JTextField
++setEmailtxtfield(JTextField emailtxtfield): void
++getPasswordsignin(): JPasswordField
++setPasswordsignin(JPasswordField passwordsignin): void
++getContacttextfield(): JTextField
++setContacttextfield(JTextField contacttextfield): void
+-initialize(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>0</y>
+      <w>396</w>
+      <h>660</h>
+    </coordinates>
+    <panel_attributes>Main_Project::Addpets
+--
+~addpetframe: JFrame
+-petnamefield: JTextField
+-petagefield: JTextField
+-petbreedfield: JTextField
+-colortextfield: JTextField
+-birthdaytextfield: JTextField
+-petgenderfield, pettypefield: JComboBox&lt;String&gt;
+-Logo: JLabel
+-InpuDataLabel: JLabel
+-colorLAbel: JLabel
+-breedLabel: JLabel
+-sexLabel: JLabel
+-AgeLabel: JLabel
+-bdayLabel: JLabel
+-nameLabel: JLabel
+-inputButton: JButton
+-ClearButton: JButton
+-panel: JPanel
+-choosepet: JButton
+-microchiptextfield: JTextField
+-registerednamefield: JTextField
+-petsdisplay: JLabel
+-filloutlbl: JLabel
+-pawlbl: JLabel
+--
++Addpets(): ctor
++main(String[] args): void
+-initialize(): void
+-clearFields(): void
+-calculateAge(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>0</y>
+      <w>444</w>
+      <h>660</h>
+    </coordinates>
+    <panel_attributes>Main_Project::EditPets
+--
+~editpetsframe: JFrame
+-editpetnamefield: JTextField
+-editpetagefield: JTextField
+-editpetbreedfield: JTextField
+-editcolortextfield: JTextField
+-editbirthdaytextfield: JTextField
+-editpetgenderfield, editpettypefield: JComboBox&lt;String&gt;
+-Logo: JLabel
+-InpuDataLabel: JLabel
+-colorLAbel: JLabel
+-breedLabel: JLabel
+-sexLabel: JLabel
+-AgeLabel: JLabel
+-bdayLabel: JLabel
+-nameLabel: JLabel
+-inputButton: JButton
+-ClearButton: JButton
+-panel: JPanel
+-choosepet: JButton
+-editmicrochiptextfield: JTextField
+-editregisterednamefield: JTextField
+-petsdisplay: JLabel
+-filloutlbl: JLabel
+-pawlbl: JLabel
+--
++EditPets(): ctor
++main(String[] args): void
+-initialize(): void
+-clearFields(): void
+-calculateAge(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1464</x>
+      <y>0</y>
+      <w>480</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>Main_Project::AddDataFormImmunization
+--
+-dateTextField: JTextField
+-weightTextField: JTextField
+-againstTextField: JTextField
+-manufacturerTextField: JTextField
+-lotNumberTextField: JTextField
+-veterinarianTextField: JTextField
+-submitButton: JButton
+-tableModel: DefaultTableModel
+-HeaderPanel: JPanel
+-Logo: JLabel
+-GroupOfPets: JLabel
+-clearButton: JButton
+-VeterinarianLabel: JLabel
+-ManufacturerLabel: JLabel
+-AgainstLabel: JLabel
+-LotNumberLAbel: JLabel
+-DateLabel: JLabel
+-WeightkgLabel: JLabel
+-HeaderLAbelImmunizationandDewormingInput: JLabel
+--
++AddDataFormImmunization(DefaultTableModel model): ctor
++main(String[] args): void
+-addTextFieldKeyListener(JTextField textField): void
+-resetTextFieldColors(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1956</x>
+      <y>96</y>
+      <w>1152</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>Main_Project::PetProfile
+--
+-data: ArrayList&lt;String&gt;
+~petProfileFrame: JFrame
+~nameDisplay, bdayDisplay, ageDisplay, genderDisplay, breedDisplay, colorDisplay, petTypeDisplay, MicrochipDisplay, registerednameDisplay: JLabel
+-immunizationsdewormingbutton: JButton
+-ConditionAllergies: JButton
+-HeaderPanel: JPanel
+-Logo: JLabel
+-HomeLabel: JLabel
+-AboutLabel: JLabel
+-ContactUsLabel: JLabel
+-petprofiledisplay: JLabel
+-SaveDataButton: JButton
+-FindDatabutton: JButton
+-dataLabel: JLabel
+-clearData: JButton
+-MenuPanel: JPanel
+--
++PetProfile(): ctor
++main(String[] args): void
+-initialize(): void
+-exportData(): void
+-importData(): void
+-displayData(): void
+-clearData(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>816</y>
+      <w>372</w>
+      <h>492</h>
+    </coordinates>
+    <panel_attributes>Main_Project::Ownerprofile
+--
+~ownerframe: JFrame
+~nameLabel, phoneLabel, adressLabel: JLabel
+~MenuPanel: JPanel
+-data: ArrayList&lt;String&gt;
+-ProfilePicture: JLabel
+-Logo: JLabel
+-OwnersProfileLabel: JLabel
+-homeLabel: JLabel
+-AboutLabel: JLabel
+-ContactUsLabel: JLabel
+-Pawlogo: JLabel
+-Infodisplay: JLabel
+-clearbutton: JButton
+-MenuButton: JButton
+--
++Ownerprofile(): ctor
++main(String[] args): void
+-initialize(): void
+-displayData(): void
+-exportData(): void
+-importData(): void
+-clearData(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>816</y>
+      <w>432</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>Main_Project::AddDataForm
+--
+~AddDataformframe: JFrame
+-medicineField: JTextField
+-conditionField: JTextField
+-allergiesField: JTextField
+-mainApp: KnownConditionandAllergies
+-medicineLabel: JLabel
+-conditionLabel: JLabel
+-allergiesLabel: JLabel
+-logo: JLabel
+-inputNewDataLabel: JLabel
+-HEADERPANEL: JPanel
+-Petpics: JLabel
+-addDataForm: AddDataForm
+--
++AddDataForm(KnownConditionandAllergies app): ctor
++AddDataForm(DefaultTableModel model): ctor
+-initialize(): void
+-loadFont(String fontPath): Font
+-clearFields(): void
++show(): void
++setVisible(boolean b): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>948</x>
+      <y>816</y>
+      <w>588</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>Main_Project::KnownConditionandAllergies
+--
+~KnownAllergiesAndConditionframe: JFrame
+-table: JTable
+-tableModel: DefaultTableModel
+-importButton: JButton
+-customFont: Font
+-ManuPanel: JPanel
+--
++KnownConditionandAllergies(): ctor
++main(String[] args): void
+-initialize(): void
+-addInfo(): void
++addInfoFromForm(String Illnes, String Description, String Drugstaken): void
+-exportTableData(): void
+-importTableData(): void
+-clearTableData(): void
++getCustomFont(): Font
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1548</x>
+      <y>816</y>
+      <w>396</w>
+      <h>372</h>
+    </coordinates>
+    <panel_attributes>Main_Project::LoadingPage
+--
+-frame: JFrame
+-progressBar = new JProgressBar(): JProgressBar
+-percentageLabel = new JLabel("0%"): JLabel
+-animatedImageLabel = new JLabel(): JLabel
+-animatedImageLabel2 = new JLabel(): JLabel
+-progressValue = 0: int
+-timer: Timer
+-imageXPosition = 30: int
+-logo = new JLabel(""): JLabel
+--
++LoadingPage(): ctor
++main(String[] args): void
+-initialize(): void
+-startProgressBar(): void
+-moveImage(): void
+-startImageAnimation(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1956</x>
+      <y>816</y>
+      <w>228</w>
+      <h>336</h>
+    </coordinates>
+    <panel_attributes>Main_Project::Ownerinfo
+--
+~ownerinfoframe: JFrame
+-nameJTextfield: JTextField
+-numberJTextfield: JTextField
+-adressJTextfield: JTextField
+-Logo: JLabel
+-FullNameLabel: JLabel
+-PhoneNumberLabel: JLabel
+-AddressLabel: JLabel
+-ownerdatalbl: JLabel
+-inputdatabttn: JButton
+--
++Ownerinfo(): ctor
++main(String[] args): void
+-initialize(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>1320</y>
+      <w>324</w>
+      <h>312</h>
+    </coordinates>
+    <panel_attributes>Main_Project::ImmunizationsDeworming
+--
+-table: JTable
+-tableModel: DefaultTableModel
+-dateField: JTextField
+-timeField: JTextField
+-timer: Timer
+-timerTask: TimerTask
+-MenuPanel: JPanel
+--
++ImmunizationsDeworming(): ctor
+-exportTableData(): void
+-importTableData(): void
+-scheduleAlarm(String timeText): void
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>1320</y>
+      <w>228</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>Main_Project::ContactUS
+--
+~contactUs: JFrame
+-firstNameField: JTextField
+-LastNameField: JTextField
+-EmailField: JTextField
+-textArea: JTextArea
+-MenuPanel: JPanel
+--
++ContactUS(): ctor
++main(String[] args): void
+-initialize(): void
+-saveData(): void
+-clearFields(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>1320</y>
+      <w>264</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Main_Project::OwnerHomepage
+--
+~ownerhomepage: JFrame
+~MenuPanel: JPanel
+--
++OwnerHomepage(): ctor
++main(String[] args): void
+-initialize(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>972</x>
+      <y>1320</y>
+      <w>360</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Main_Project::AboutUs
+--
+-MenuPanel: JPanel
+--
++main(String[] args): void
+-body(): void
++setThumbHighlightColor(Color yellow): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1344</x>
+      <y>1320</y>
+      <w>276</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Main_Project::LandingHomePage
+--
+~LandingHomePageframe: JFrame
+--
++LandingHomePage(): ctor
++main(String[] args): void
+-initialize(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1632</x>
+      <y>1320</y>
+      <w>360</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Main_Project::UserManual
+--
+-MenuPanel: JPanel
+--
++main(String[] args): void
+-body(): void
++setThumbHighlightColor(Color yellow): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
